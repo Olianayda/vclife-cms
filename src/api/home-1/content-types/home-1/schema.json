@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_1",
+  "info": {
+    "singularName": "home-1",
+    "pluralName": "home-1s",
+    "displayName": "Home-1"
+  },
+  "options": { "draftAndPublish": false },
+  "attributes": {
+    "featuredArticle": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    },
+    "popularAuthors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::author.author"
+    },
+    "homepageCategories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category"
+    }
+  }
+}
+
+
